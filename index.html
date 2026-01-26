@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arto Baltayan — Portfolio</title>
+  <meta name="description" content="Portfolio landing page for Arto Baltayan" />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#0f1a2e; --text:#e7eefc; --muted:#a9b8d6;
+      --border:rgba(231,238,252,.12); --link:#8ab4ff; --chip:#122142;
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text); background:
+        radial-gradient(900px 600px at 20% 0%, rgba(138,180,255,.18), transparent 55%),
+        radial-gradient(900px 600px at 80% 10%, rgba(167,139,250,.18), transparent 55%),
+        var(--bg);
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:44px 18px 64px}
+    header{display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap}
+    .title{max-width:720px}
+    h1{margin:0 0 6px; font-size:34px; letter-spacing:.2px}
+    .subtitle{margin:0; color:var(--muted)}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px; border-radius:12px; border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+    }
+    .btn:hover{background:rgba(255,255,255,.07); text-decoration:none}
+    main{margin-top:26px; display:grid; grid-template-columns: 1.3fr .7fr; gap:16px}
+    @media (max-width:860px){ main{grid-template-columns:1fr} }
+    .card{
+      background:rgba(15,26,46,.72);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .card h2{margin:0 0 10px; font-size:18px}
+    .card p{margin:0 0 10px; color:var(--muted)}
+    .project{
+      padding:14px; border-radius:16px; border:1px solid var(--border);
+      background:rgba(0,0,0,.18);
+    }
+    .project h3{margin:0 0 6px; font-size:16px}
+    .meta{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .chip{
+      display:inline-flex; align-items:center; padding:4px 8px; border-radius:999px;
+      background:var(--chip); border:1px solid var(--border); color:var(--muted); font-size:12px;
+    }
+    footer{margin-top:20px; color:var(--muted); font-size:13px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <h1>Arto Baltayan</h1>
+        <p class="subtitle">Documentation-focused software projects • API docs • GitHub Pages</p>
+      </div>
+
+      <div class="actions">
+        <!-- EDIT THIS (optional) -->
+        <a class="btn" href="https://github.com/arto-b" target="_blank" rel="noreferrer">GitHub</a>
+
+        <!-- EDIT THIS -->
+        <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noreferrer">LinkedIn</a>
+
+        <!-- EDIT THIS (optional) -->
+        <a class="btn" href="mailto:YOUR_EMAIL@example.com">Email</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Featured Project</h2>
+
+        <div class="project">
+          <h3>Binary Search Tree (C++)</h3>
+          <p>
+            Iterative, pointer-based BST implementation with custom Stack and Queue helpers.
+            Fully documented with Doxygen and published via GitHub Pages.
+          </p>
+
+          <!-- EDIT THIS (repo + docs) -->
+          <p>
+            <a href="https://github.com/arto-b/YOUR_BST_REPO" target="_blank" rel="noreferrer">Source (GitHub)</a>
+            &nbsp;•&nbsp;
+            <a href="https://arto-b.github.io/YOUR_BST_REPO/" target="_blank" rel="noreferrer">API Reference (Docs)</a>
+          </p>
+
+          <div class="meta">
+            <span class="chip">C++</span>
+            <span class="chip">Doxygen</span>
+            <span class="chip">GitHub Pages</span>
+            <span class="chip">Iterative</span>
+            <span class="chip">Raw pointers</span>
+          </div>
+        </div>
+
+        <footer>
+          More projects coming soon.
+        </footer>
+      </section>
+
+      <aside class="card">
+        <h2>About</h2>
+        <p>
+          I build small, well-documented projects and publish clear API references.
+          I focus on consistency, ownership/behavior notes, and documentation that matches implementation.
+        </p>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
