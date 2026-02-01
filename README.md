@@ -1,2 +1,2 @@
 # arto-b.github.io
-Personal portfolio and technical writing site
+Documentation engineering portfolio (C++ focus): writing samples, project documentation, and published API references.
