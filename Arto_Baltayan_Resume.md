@@ -1,6 +1,6 @@
 # ARTO BALTAYAN
 
-Merrimack, NH • (978) 944-3566 • code.docs1@gmail.com  
+Merrimack, NH • code.docs1@gmail.com  
 Portfolio: https://arto-b.github.io
 
 ---
